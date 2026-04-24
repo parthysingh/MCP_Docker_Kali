@@ -1,17 +1,21 @@
 {
   "mcpServers": {
-    "pentest": {
+    "mcp-toolkit-gateway": {
       "command": "docker",
       "args": [
         "run",
-        "--rm",
         "-i",
-        "--privileged",
-        "pentest-mcp-server"
-      ],
-      "env": {
-        "MCP_TOOL_LOAD_MODE": "eager"
-      }
+        "--rm",
+        "-v", "/var/run/docker.sock:/var/run/docker.sock",
+        "-v", "/Users/your_username/.docker/mcp:/mcp",
+        "docker/mcp-gateway",
+        "--catalog=/mcp/catalogs/docker-mcp.yaml",
+        "--catalog=/mcp/catalogs/custom.yaml",
+        "--config=/mcp/config.yaml",
+        "--registry=/mcp/registry.yaml",
+        "--tools-config=/mcp/tools.yaml",
+        "--transport=stdio"
+      ]
     }
   },
   "preferences": {
