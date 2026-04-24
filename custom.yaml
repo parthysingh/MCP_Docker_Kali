@@ -1,0 +1,46 @@
+version: 2
+name: custom
+displayName: Custom MCP Servers
+registry:
+  pentest:
+    description: "Penetration testing tools for authorized security assessments - educational use only"
+    title: "Penetration Testing Suite"
+    type: server
+    dateAdded: "2025-02-03T00:00:00Z"
+    image: pentest-mcp-server:latest
+    ref: ""
+    readme: ""
+    toolsUrl: ""
+    source: ""
+    upstream: ""
+    icon: ""
+    tools:
+      - name: nmap_scan
+      - name: subfinder_enumerate
+      - name: amass_enumerate
+      - name: theharvester_search
+      - name: nikto_scan
+      - name: dirb_scan
+      - name: gobuster_dir
+      - name: ffuf_fuzz
+      - name: wpscan_wordpress
+      - name: sqlmap_test
+      - name: xsstrike_scan
+      - name: searchsploit_search
+      - name: hydra_bruteforce
+      - name: medusa_bruteforce
+      - name: cewl_generate
+      - name: crunch_generate
+      - name: msfconsole_search
+      - name: routersploit_info
+      - name: linpeas_info
+    metadata:
+      category: automation
+      tags:
+        - security
+        - pentesting
+        - education
+        - kali
+        - vulnerability-scanning
+      license: MIT
+      owner: local
