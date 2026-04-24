@@ -10,3 +10,8 @@ nano ~/.docker/mcp/catalogs/custom.yaml
 
 # Edit registry file
 nano ~/.docker/mcp/registry.yaml
+
+registry:
+  # ... existing servers ...
+  pentest:
+    ref: ""
