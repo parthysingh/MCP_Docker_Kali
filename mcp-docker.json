@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "pentest": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--privileged",
+        "pentest-mcp-server"
+      ],
+      "env": {
+        "MCP_TOOL_LOAD_MODE": "eager"
+      }
+    }
+  },
+  "preferences": {
+    "coworkScheduledTasksEnabled": false,
+    "ccdScheduledTasksEnabled": false,
+    "coworkWebSearchEnabled": true,
+    "legacyQuickEntryEnabled": false,
+    "menuBarEnabled": false
+  }
+}
