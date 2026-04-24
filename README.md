@@ -12,6 +12,6 @@ nano ~/.docker/mcp/catalogs/custom.yaml
 nano ~/.docker/mcp/registry.yaml
 
 registry:
-  # ... existing servers ...
+  // ... existing servers ...
   pentest:
     ref: ""
